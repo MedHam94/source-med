@@ -1,0 +1,136 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/*Mobile First*/
+    /*Nav Bar*/
+header{
+  margin: 0;
+  padding: 10px 0;
+  background: #f5f9fc;
+  border-bottom: 1px solid #2c4458;
+} 
+
+.middle-nav, .right-nav{
+  display: none;
+}
+header .left-nav{
+  text-align: center;
+}
+header h2{
+  margin: 0;
+}
+
+/*Main Body*/
+    /*First Part*/
+
+main{
+  /* padding: 40px 4%; */
+  margin: 0;
+  background: #f5f9fc;
+}
+.main-left{
+  padding: 40px 4% 0;
+}
+main span{
+  color: #aebdca;
+}
+main .main-left h1{
+  color: #2a4256;
+}
+
+  /*Form*/
+
+.text-input {
+  background: #e2eaf0;
+  border: none;
+  width: 100%;
+  padding: 13px 20px;
+}
+
+.button-input{
+  background: #2a4256;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 13px 20px;
+  margin-top: 10px;
+}
+
+/*Image*/
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  height: auto;
+  
+}
+/*Other*/
+
+.main-bottom{
+  display: none;
+}
+
+/*Media Query for Laptop*/
+@media screen and (min-width: 769px) {
+  /*NavBar*/
+  header {
+    height: 55px;
+  }
+  header nav > *{
+    float:  left;
+    width: 20%;
+  }
+
+  .middle-nav, .right-nav{
+    display: contents;
+  }
+
+  header .left-nav{
+    text-align: left;
+  }
+  /*fix list*/
+  .middle-nav{
+    width: 60%;
+  }
+  .middle-nav ul{
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    margin: 0;
+  }
+  .middle-nav ul li{
+    display: inline-block;
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************

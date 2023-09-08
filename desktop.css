@@ -1,0 +1,155 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+/*NavBar*/
+header {
+  margin: 0;
+  padding: 0 40px;
+  height: 55px;
+  background: #f5f9fc;
+}
+nav{
+  height: 100%;
+}
+
+header nav > * {
+  float: left;
+  width: 20%;
+}
+    /*Title*/
+h2{
+  margin: 0;
+  padding: 13px 0;
+  height: 100%;
+  color: #294256;
+}
+.left-nav{
+  height: 100%;
+}
+    
+
+    /*style list*/
+.middle-nav{
+  text-align: center;
+  width: 60%;
+  height: 100%;
+}
+
+.middle-nav ul li{
+  display: inline-block;
+  padding: 0 2%;
+}
+a{
+  color: #657989;
+}
+
+    /*right Nav*/
+
+.right-nav a{
+  height: auto;
+  float: right;
+  
+  /* vertical-align: middle; */
+  padding: 9px 18px ;
+  background: #294256;
+  color: #f5f9fc;
+  position: relative;
+  top: 9px;
+}    
+header nav .right-nav {
+  height: 100%;
+  position: relative;
+
+}
+
+/*Main*/
+
+main > * {
+  float: left;
+  width: 50%;
+  height: 612px;
+  background: #f5f9fc;
+}
+    /*Left Main*/
+
+.main-left{
+  padding: 10% 7%;
+}
+
+.main-left span{
+  color: #657989;
+}
+
+.main-left h1, .main-left p{
+  color: #294154;
+}
+        /*Text Input*/
+        .text-input {
+          background: #e2eaf0;
+          border: none;
+          font-size: 0.7rem;
+          width: 65%;
+          height: 35px;
+          padding-left: 20px;
+        }
+        .button-input{
+          background: #2a4256;
+          color: white;
+          border: none;
+          padding: 0 6%;
+          height: 35px;
+        }
+    /*Right Main*/
+        img {
+          max-width: 100%;
+          width: 100%;
+          display: block;
+          height: 612px;
+        }
+
+    /*Bot Main*/
+  .main-bottom{
+    width: 100%;
+    padding: 40px 7%;
+  }
+  .main-bottom > * {
+    float: left;
+    width: 25%;
+  }
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
